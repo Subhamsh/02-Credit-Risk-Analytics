@@ -7,7 +7,7 @@ select
 	count(id) - count(distinct id) as duplicate_ids
 from credit_default_risk;
 
---loan_amnt max and min values															50-40,000
+--loan_amnt max and min values															500-40,000
 select min(loan_amnt), max(loan_amnt)
 from credit_default_risk cdr ;
 
@@ -15,7 +15,7 @@ from credit_default_risk cdr ;
 select 100.0 * count(loan_amnt)/count(*) as not_null_pct
 from credit_default_risk;
 
---funded_amnt max and min values														50-40,000
+--funded_amnt max and min values														500-40,000
 select min(funded_amnt), max(funded_amnt)
 from credit_default_risk cdr ;
 
